@@ -4,9 +4,9 @@ import java.util.Observable;
 
 public class MyObservable extends Observable
 {
-	public String changeS(String s)
+	public void setNews(String s)
 	{
-		setChanged();
-		return "2";
+		super.setChanged();
+		super.notifyObservers(s);
 	}
 }

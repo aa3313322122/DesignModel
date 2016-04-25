@@ -9,14 +9,7 @@ public class MyObserver implements Observer
 	@Override
 	public void update(Observable o, Object arg)
 	{
-		if(null == arg)
-		{
-			System.out.println("i will updating ");
-		}
-		else
-		{
-			System.out.println("im updating " + arg.toString());
-		}
+		System.out.println("最新消息：" + arg.toString());
 	}
 	
 	public void update(Observable o)
